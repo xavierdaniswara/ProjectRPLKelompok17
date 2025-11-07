@@ -1,25 +1,13 @@
-const { Pool } = require('pg');
-require("dotenv").config();
+const mongoose = require('mongoose');
 
-let { PGHOST, PGDATABASE, PGUSER, PGPASSWORD, PORT } = process.env;
+async function connectDB(uri) {
+  try {
+    await mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+    console.log('MongoDB connected');
+  } catch (err) {
+    console.error('MongoDB connection error:', err);
+    process.exit(1);
+  }
+}
 
-const pool = new Pool({
-	user: PGUSER,
-	password: PGPASSWORD,
-	host: PGHOST,
-	database: PGDATABASE,
-	port: PORT,
-	ssl: true
-});
-
-const connectDB = async (req, res) => {
-	try {
-		const client = await pool.connect();
-		console.log('Connected to NeonDB');
-		client.release();
-	} catch (err) {
-		console.error('Error connecting to NeonDB:', err);
-	}
-};
-
-module.exports = {pool, connectDB};
+module.exports = connectDB;
