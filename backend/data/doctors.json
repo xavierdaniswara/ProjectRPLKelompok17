@@ -1,0 +1,137 @@
+[
+  {
+    "id": "DU001",
+    "nama": "dr. Andi Pratama",
+    "spesialisasi": "Dokter Umum",
+    "pengalaman_tahun": 6,
+    "jadwal_praktik": "Senin–Jumat 08:00–14:00",
+    "telemedis": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DU002",
+    "nama": "dr. Siti Rahmawati",
+    "spesialisasi": "Dokter Umum",
+    "pengalaman_tahun": 4,
+    "jadwal_praktik": "Senin–Sabtu 09:00–13:00",
+    "telemedis": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DU003",
+    "nama": "dr. Budi Santoso",
+    "spesialisasi": "Dokter Umum",
+    "pengalaman_tahun": 10,
+    "jadwal_praktik": "Senin–Kamis 10:00–16:00",
+    "telemedis": false,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DU004",
+    "nama": "dr. Lina Kusuma",
+    "spesialisasi": "Dokter Umum",
+    "pengalaman_tahun": 3,
+    "jadwal_praktik": "Selasa–Sabtu 08:00–12:00",
+    "telemedis": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DU005",
+    "nama": "dr. Rafi Maulana",
+    "spesialisasi": "Dokter Umum",
+    "pengalaman_tahun": 7,
+    "jadwal_praktik": "Senin–Jumat 13:00–18:00",
+    "telemedis": false,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DG001",
+    "nama": "drg. Maya Lestari",
+    "spesialisasi": "Dokter Gigi Umum",
+    "pengalaman_tahun": 5,
+    "jadwal_praktik": "Senin–Jumat 09:00–15:00",
+    "layanan": ["Tambal", "Cabut Gigi", "Scaling"],
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DG002",
+    "nama": "drg. Rian Prakoso",
+    "spesialisasi": "Dokter Gigi Umum",
+    "pengalaman_tahun": 8,
+    "jadwal_praktik": "Senin–Sabtu 10:00–17:00",
+    "layanan": ["Scaling", "Bleaching"],
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DG003",
+    "nama": "drg. Intan Permata",
+    "spesialisasi": "Dokter Gigi Umum",
+    "pengalaman_tahun": 4,
+    "jadwal_praktik": "Selasa–Jumat 09:00–14:00",
+    "layanan": ["Tambal Gigi", "Perawatan Gigi Anak"],
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DG004",
+    "nama": "drg. Aditya Wibowo",
+    "spesialisasi": "Dokter Gigi Umum",
+    "pengalaman_tahun": 6,
+    "jadwal_praktik": "Senin–Kamis 11:00–18:00",
+    "layanan": ["Cabut Gigi", "Scaling"],
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DG005",
+    "nama": "drg. Nabila Syafitri",
+    "spesialisasi": "Dokter Gigi Umum",
+    "pengalaman_tahun": 3,
+    "jadwal_praktik": "Rabu–Sabtu 08:00–13:00",
+    "layanan": ["Tambal", "Pemeriksaan Rutin"],
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DS001",
+    "nama": "dr. Ahmad Fadhil, Sp.PD",
+    "spesialisasi": "Penyakit Dalam",
+    "pengalaman_tahun": 12,
+    "jadwal_praktik": "Senin–Jumat 16:00–20:00",
+    "rujukan_dari_umum": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DS002",
+    "nama": "dr. Clara Wijaya, Sp.A",
+    "spesialisasi": "Spesialis Anak",
+    "pengalaman_tahun": 9,
+    "jadwal_praktik": "Senin–Kamis 09:00–14:00",
+    "rujukan_dari_umum": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DS003",
+    "nama": "dr. Dimas Saputra, Sp.JP",
+    "spesialisasi": "Jantung dan Pembuluh Darah",
+    "pengalaman_tahun": 15,
+    "jadwal_praktik": "Selasa–Jumat 17:00–21:00",
+    "rujukan_dari_umum": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DS004",
+    "nama": "dr. Livia Hartono, Sp.KK",
+    "spesialisasi": "Kulit dan Kelamin",
+    "pengalaman_tahun": 7,
+    "jadwal_praktik": "Senin–Rabu 10:00–15:00",
+    "rujukan_dari_umum": false,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  },
+  {
+    "id": "DS005",
+    "nama": "dr. Yoga Pranata, Sp.THT",
+    "spesialisasi": "THT",
+    "pengalaman_tahun": 11,
+    "jadwal_praktik": "Kamis–Sabtu 13:00–18:00",
+    "rujukan_dari_umum": true,
+    "calendar_id": "medical-chatbot-agent@gen-lang-client-0609198240.iam.gserviceaccount.com"
+  }
+]

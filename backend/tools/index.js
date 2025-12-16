@@ -1,7 +1,7 @@
 // tools/index.js
 const { searchWeb } = require('./webSearch');
 const { getFreeSlots, createAppointment } = require('./calendar');
-
+const { findDoctors } = require('./doctorLookup');
 // 1. Define the tools for Gemini (JSON Schema)
 const tools = [
   {
@@ -21,12 +21,26 @@ const tools = [
         }
       },
       {
+        name: "find_doctors",
+        description: "Finds a list of doctors based on their medical specialization.",
+        parameters: {
+          type: "OBJECT",
+          properties: {
+            category: {
+              type: "STRING",
+              description: "The medical specialization to search for (e.g., 'Dokter Umum', 'Gigi', 'Jantung', 'Kulit')."
+            }
+          },
+          required: ["category"]
+        }
+      },
+      {
         name: "check_doctor_availability",
         description: "Checks specific doctor's calendar for free slots on a given date.",
         parameters: {
           type: "OBJECT",
           properties: {
-            doctor_calendar_id: { type: "STRING" }, // You might map this internally from a name
+            doctor_calendar_id: { type: "STRING", description: "The calendar_id obtained from the find_doctors tool." }, // You might map this internally from a name
             date: { type: "STRING", description: "YYYY-MM-DD format" }
           },
           required: ["doctor_calendar_id", "date"]
@@ -54,6 +68,9 @@ const tools = [
 const toolFunctions = {
   search_web: async ({ query }) => {
     return await searchWeb(query);
+  },
+  find_doctors: async ({ category }) => {
+    return await findDoctors(category);
   },
   check_doctor_availability: async ({ doctor_calendar_id, date }) => {
     return await getFreeSlots(doctor_calendar_id, date);

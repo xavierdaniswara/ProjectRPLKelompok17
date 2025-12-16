@@ -29,6 +29,13 @@ router.post('/', requireLogin, async (req, res) => {
       parts: [{ text: doc.content }]
     }));
 
+    // --- FIX: SANITIZE HISTORY ---
+    // Gemini Rule: The first message in history MUST be from the 'user'.
+    // If the slice starts with 'model', remove it.
+    if (history.length > 0 && history[0].role === 'model') {
+      history.shift(); // Removes the first element
+    }
+
     // 4. Start the Chat Session with History
     const chat = chatModel.startChat({
       history: history,
