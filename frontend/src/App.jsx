@@ -57,7 +57,6 @@ export default function App() {
           )}
         </div>
       </main>
-      <footer className="text-center text-xs text-gray-400 p-4">Demo only — bukan pengganti konsultasi dokter.</footer>
     </div>
   )
 }

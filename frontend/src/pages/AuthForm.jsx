@@ -26,11 +26,11 @@ export default function AuthForm({ onAuth }) {
     return (
         <div className="max-w-md w-full bg-white rounded-2xl shadow p-6">
             <h2 className="text-xl font-semibold mb-2">{mode === 'login' ? 'Login' : 'Register'}</h2>
-            <p className="text-sm text-gray-500 mb-4">Gunakan demo session-based auth. Cookie akan tersimpan otomatis.</p>
+            <p className="text-sm text-gray-500 mb-4">Input login/register info</p>
             <form onSubmit={submit} className="space-y-3" role="form" aria-label="Authentication form">
                 {mode === 'register' && (
                     <div>
-                        <label className="text-sm text-gray-700">Nama</label>
+                        <label className="text-sm text-gray-700">Name</label>
                         <input
                             name="name"
                             placeholder="Nama lengkap"

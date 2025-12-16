@@ -7,8 +7,7 @@ export default function Header({ user, onLogout }) {
                 <div className="flex items-center gap-3">
                     <div className="w-10 h-10 bg-white border rounded-lg flex items-center justify-center shadow-sm">🏥</div>
                     <div>
-                        <div className="text-lg font-semibold text-gray-800">Medical Chatbot</div>
-                        <div className="text-xs text-gray-500">Konsultasi medis — demo</div>
+                        <div className="text-lg font-semibold text-gray-800">KesmasDesk AI</div>
                     </div>
                 </div>
                 <div className="flex items-center gap-3">
